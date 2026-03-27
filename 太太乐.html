@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>太太乐 - 品牌营销项目</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563eb',
+                        secondary: '#64748b',
+                        dark: '#0f172a',
+                        light: '#f8fafc'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .text-shadow {
+                text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            .transition-all-300 {
+                transition: all 0.3s ease;
+            }
+            .hover-lift {
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+            .hover-lift:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 15px 30px -10px rgba(0,0,0,0.1);
+            }
+            .card-hover {
+                transition: all 0.3s ease;
+            }
+            .card-hover:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 20px 40px -15px rgba(0,0,0,0.15);
+            }
+            .gradient-bg {
+                background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            }
+        }
+    </style>
+</head>
+<body class="bg-light text-dark">
+    <!-- 导航栏 -->
+    <header class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm z-50 border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="主页.html" class="text-xl font-bold text-primary">马欣睿</a>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="主页.html#home" class="text-secondary hover:text-primary transition-colors">首页</a>
+                    <a href="主页.html#about" class="text-secondary hover:text-primary transition-colors">关于</a>
+                    <a href="主页.html#skills" class="text-secondary hover:text-primary transition-colors">技能</a>
+                    <a href="主页.html#portfolio" class="text-secondary hover:text-primary transition-colors">作品集</a>
+                </nav>
+                <button class="md:hidden text-secondary">
+                    <i class="fa fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- 项目详情头部 -->
+    <section class="pt-40 pb-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-wrap gap-4 mb-8">
+                <span class="px-4 py-2 bg-blue-50 text-primary text-sm font-medium rounded-full">品牌营销</span>
+                <span class="px-4 py-2 bg-blue-50 text-primary text-sm font-medium rounded-full">小红书全案</span>
+                <span class="px-4 py-2 bg-blue-50 text-primary text-sm font-medium rounded-full">内容策略</span>
+            </div>
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-8 text-shadow">太太乐 IP 营销项目</h1>
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <div>
+                    <h3 class="text-sm font-medium text-secondary uppercase tracking-wider mb-2">项目时间</h3>
+                    <p class="font-semibold">2024.05 - 2024.09</p>
+                </div>
+                <div>
+                    <h3 class="text-sm font-medium text-secondary uppercase tracking-wider mb-2">项目角色</h3>
+                    <p class="font-semibold">小红书达人运营实习生</p>
+                </div>
+                <div>
+                    <h3 class="text-sm font-medium text-secondary uppercase tracking-wider mb-2">项目成果</h3>
+                    <p class="font-semibold">总曝光2500W+，互动21W+</p>
+                </div>
+            </div>
+            <div class="w-full h-[500px] rounded-3xl overflow-hidden shadow-lg mb-16">
+                <img src="1.png" alt="太太乐IP营销项目" class="w-full h-full object-cover">
+            </div>
+        </div>
+    </section>
+
+    <!-- 项目详情内容 -->
+    <section class="py-20 px-6 bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-3 gap-16">
+                <div class="md:col-span-2">
+                    <h2 class="text-3xl font-bold mb-8">项目介绍</h2>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-8">
+                        参与太太乐527项目小红书全案运营，通过用户评论分析与千瓜热点数据洞察，制定分阶段内容策略。负责达人筛选与预算分配，在蒲公英平台构建高性价比达人矩阵，打造单篇曝光198W+爆文。
+                    </p>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-8">
+                        通过持续投放优化，实现项目总曝光2500W+、互动21W+，CPM较行业均值降低19%，搜索指数最高增长748%。
+                    </p>
+                    
+                    <h2 class="text-3xl font-bold mb-8">核心策略</h2>
+                    <div class="space-y-8">
+                        <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 card-hover">
+                            <div class="text-3xl text-primary mb-4">
+                                <iconify-icon icon="bi:bar-chart-line"></iconify-icon>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-4">数据驱动的内容策略</h3>
+                            <p class="text-gray-700 leading-relaxed">
+                                通过分析用户评论和热点数据，识别目标受众的兴趣点和需求，制定针对性的内容策略，确保内容与用户需求高度匹配。
+                            </p>
+                        </div>
+                        
+                        <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 card-hover">
+                            <div class="text-3xl text-primary mb-4">
+                                <iconify-icon icon="bi:users"></iconify-icon>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-4">高性价比达人矩阵</h3>
+                            <p class="text-gray-700 leading-relaxed">
+                                在蒲公英平台精心筛选达人，构建多元化的达人矩阵，确保内容覆盖不同圈层的目标用户，提高品牌曝光度和影响力。
+                            </p>
+                        </div>
+                        
+                        <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 card-hover">
+                            <div class="text-3xl text-primary mb-4">
+                                <iconify-icon icon="bi:trending-up"></iconify-icon>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-4">持续优化投放策略</h3>
+                            <p class="text-gray-700 leading-relaxed">
+                                通过实时监控投放效果，不断调整优化策略，提高内容转化率和互动率，降低CPM，实现最大化的营销效果。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="space-y-8">
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                        <h3 class="text-xl font-semibold mb-6">项目成果</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <i class="fa fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <span class="text-gray-700">总曝光2500W+</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <span class="text-gray-700">互动量21W+</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <span class="text-gray-700">单篇爆文曝光198W+</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <span class="text-gray-700">CPM较行业均值降低19%</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <span class="text-gray-700">搜索指数最高增长748%</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                        <h3 class="text-xl font-semibold mb-6">使用工具</h3>
+                        <div class="flex flex-wrap gap-4">
+                            <span class="px-4 py-2 bg-gray-100 text-gray-700 text-sm font-medium rounded-full">千瓜数据</span>
+                            <span class="px-4 py-2 bg-gray-100 text-gray-700 text-sm font-medium rounded-full">蒲公英平台</span>
+                            <span class="px-4 py-2 bg-gray-100 text-gray-700 text-sm font-medium rounded-full">Excel</span>
+                            <span class="px-4 py-2 bg-gray-100 text-gray-700 text-sm font-medium rounded-full">小红书</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 项目图片展示 -->
+    <section class="py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12 text-center">项目展示</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="rounded-2xl overflow-hidden shadow-lg">
+                    <img src="ttl1.png" alt="太太乐营销数据展示" class="w-full h-full object-cover">
+                </div>
+                <div class="rounded-2xl overflow-hidden shadow-lg">
+                    <img src="7.png" alt="太太乐营销分析" class="w-full h-full object-cover">
+                </div>
+                <div class="rounded-2xl overflow-hidden shadow-lg">
+                    <img src="8.png" alt="太太乐营销效果" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 回到作品集按钮 -->
+    <section class="py-12 px-6 bg-gray-50">
+        <div class="max-w-7xl mx-auto text-center">
+            <a href="主页.html#portfolio" class="inline-block px-8 py-4 bg-primary text-white font-semibold rounded-full hover:bg-primary/90 transition-colors hover-lift">
+                回到作品集
+            </a>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-dark text-white py-12 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-xl font-bold mb-2">马欣睿</h3>
+                    <p class="text-gray-400">专业作品集展示</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fa fa-github text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fa fa-linkedin text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fa fa-behance text-xl"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 马欣睿. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
